@@ -1,0 +1,123 @@
+
+
+
+
+.cart{
+    margin-top: 60px;
+   
+    .cart-list{
+        margin-bottom: 160px;
+        .items{
+            display: flex;
+         
+          
+            grid-template-columns: repeat(6, 1fr);
+            img{
+                width: 11rem;
+                height: 8rem;
+            }
+
+            .details{
+                display: flex;
+                justify-content: space-between;
+                padding: 0 2rem;
+                width: 100%;
+                align-items: center;
+               
+
+                .inc{
+                    color: red;
+                }
+    
+                .count{
+                    font-size: 1.3rem;
+                }
+    
+                .dec{
+                    color: green;
+                }
+                span{
+                    margin: 0.7rem;
+                    cursor: pointer;
+                }
+    
+                button{
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    color: red;
+                    background-color: transparent;
+                    font-size: 2rem;
+                }
+            }
+
+        
+        }
+    }
+    
+ 
+
+  
+
+    &-totals{
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: flex-end; 
+        width: 100%;
+        background-color: white;  
+        padding-right: 20rem;
+        border-top:1px solid #d5d5d5;
+        
+        div{
+            display: flex;
+            margin-right: 1rem;
+            flex-direction: column;
+
+            button{
+                background-color: red;
+                color: white;
+                padding: 0.8rem 1.8rem;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                margin: 0.2rem;
+            }
+           
+        }
+        
+    }
+}
+
+.r{
+    .navbar{
+        border-bottom:1px solid #d5d5d5;
+    }
+    .empty-cart{
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    
+        i{
+            font-size: 5rem;
+            color: black;
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+  .items{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .details{
+          display: flex;
+          flex-direction: row !important;
+        
+      }
+  }
+}
+

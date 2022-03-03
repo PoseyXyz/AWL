@@ -1,0 +1,125 @@
+@import './scss/navbar';
+@import './scss/productlist';
+@import './scss/footer';
+@import './scss/details';
+@import './scss/cart';
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+:root{
+	--mainBlue:#2a2a72;
+	--lightBlue:#009ffd;
+	--mainWhite:#f3f3f3;
+	--mainDark:#23252B;
+	--mainYellow:#ffa400;
+}
+
+.slide-container{
+  .imgs{
+    height:100vh;
+    width:100%
+  }
+  .content{
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  
+
+   
+
+    h2{
+      font-family: 'Calibre-Bold',"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",Osaka,"ＭＳ Ｐゴシック", "MS PGothic",sans-serif;
+      font-weight: 600;
+      letter-spacing: 10px;
+      font-size: 2.5rem;
+    }
+
+    button{
+      margin-bottom: 2rem;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      color: black;
+      font-family: 'Calibre-Bold',"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",Osaka,"ＭＳ Ｐゴシック", "MS PGothic",sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      
+    }
+  }
+
+}
+
+
+.text-title{
+	font-family: 'Permanent Marker', cursive;
+	letter-spacing: 0.3em;
+	text-transform: capitalize;
+}
+.text-blue{
+	color: var(--mainBlue)
+}
+
+.text-bright{
+	color: var(--lightBlue);
+}
+
+.btn-black{
+  background:transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color:var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(-mainDark) !important;
+}
+
+.btn-black:hover{
+  background: var(--mainDark)!important;
+  color:var(--mainWhite) !important;
+}
+
+.cart-icon{
+  cursor:pointer;
+  font-size:1.2rem;
+  color: var(--mainYellow);
+}
+
+
+
+@media screen and (max-width:900px){
+  .slide-container{
+    
+    .imgs{
+  
+    
+      object-fit: cover;
+    }
+    .content{
+  
+  
+     
+  
+      h2{
+        font-family: 'Calibre-Bold',"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",Osaka,"ＭＳ Ｐゴシック", "MS PGothic",sans-serif;
+        font-weight: 600;
+        letter-spacing: 6px;
+        font-size: 2rem;
+      }
+  
+      button{
+
+        
+      }
+    }
+  
+  }
+  
+}

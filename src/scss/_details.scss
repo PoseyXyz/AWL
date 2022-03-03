@@ -1,0 +1,84 @@
+.details{
+    display: flex;
+   margin-top: 55px;
+   font-family: 'Calibre-Bold',"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",Osaka,"ＭＳ Ｐゴシック", "MS PGothic",sans-serif;
+
+
+    .img-cont{
+        width: 78.2%;
+        background-color: #d5d5d5; 
+       
+       
+
+        img{
+          
+            width: 100%;
+            max-height: 100%;
+          
+        }
+    }
+
+    .details-cont{
+        width: 20%;
+        position: fixed;
+        height: 100%;
+        right: 0;
+        padding:0rem 1rem 0 2rem;
+
+        h2{
+
+        }
+
+        h4{
+
+        }
+
+        p{
+            line-height: 2;
+        }
+        button{
+            background-color: #d5d5d5;
+            border: none;
+            outline: none;
+            padding: 0.8rem 1.7rem; 
+            margin-right: 1rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            
+        }
+
+       
+    }
+}
+
+@media screen and (max-width:1370px){
+  .img-cont{
+      width: 63.2% !important;
+
+  }
+  .details-cont{
+      width: 35% !important;
+     
+  }
+}
+
+@media screen and (max-width:970px){
+    .details{
+        display: flex !important;
+        flex-direction: column;
+
+        .img-cont{
+            width: 100% !important;
+        }
+
+        
+
+        &-cont{
+           position: static !important;
+            width: auto !important;
+            
+            padding-bottom: 1rem !important;
+            
+        }
+    }
+}

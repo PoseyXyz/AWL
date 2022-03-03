@@ -1,0 +1,133 @@
+.navbar{
+    color: #1a1a1a;
+    background-color: #fff;
+   padding: 0 1rem;
+    font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",Osaka,"ＭＳ Ｐゴシック", "MS PGothic",Sans-Serif;
+    //background-color: #d5d5d5;
+   
+   //
+
+ 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 3;
+.navbar-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    p{
+        font-size: 1.1rem;
+        margin-right: 38px;
+        font-weight: 900;
+        cursor: pointer;
+
+
+        i{
+            font-size: 0.8rem;
+            margin-right: 1rem;
+        }
+    }
+    h3{
+        letter-spacing: 3px;
+        transition: 2s;
+        font-weight: 900;
+        &:hover{
+            text-decoration: line-through;
+        }
+    }
+    
+}
+
+%overlay-content{
+    display: flex;
+    flex-direction: column;
+    
+    position: fixed;
+        z-index: 1;
+        overflow-x: hidden;
+        
+        transition: 0.5s;
+        padding-top: 60px;
+    //
+    right: 0;
+     height:88%;
+     top: 59.5px;
+
+     background-color: white;
+     border-top: 1px solid rgba(0, 0, 0, 0.158);
+     
+        a{
+            text-decoration: none;
+            color: #111;
+            text-transform: uppercase;
+        }
+        
+       
+
+        li{
+            padding: 0px 0 32px 2.5rem;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 900;
+            
+            
+        
+            
+    
+            &:hover {
+              
+              }
+        }
+
+  
+
+    li{
+        font-size: 1.2rem;
+        list-style-type: none;
+    }
+}
+
+.overlay-content-left{
+ @extend %overlay-content;
+ left: 0;
+}
+.overlay-content-right{
+    @extend %overlay-content;
+    right: 0;
+}
+.openbtn {
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+}
+
+@media screen and (max-width:700px){
+    .navbar-content{
+        p{
+
+            font-size: 1rem !important;
+            margin-right: 2px;
+            font-weight: 200;
+            cursor: pointer;
+            i{
+                font-size: 0rem;
+                margin-right: 0;
+             
+            }
+        }
+    }
+ .openbtn{
+     font-size: 1rem !important;
+ }
+ 
+}
+
+
+
